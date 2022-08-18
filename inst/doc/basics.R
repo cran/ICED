@@ -1,0 +1,16 @@
+## ---- include = FALSE---------------------------------------------------------
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+
+## ----setup--------------------------------------------------------------------
+library(ICED)
+
+## ----syntax generation--------------------------------------------------------
+struc <- data.frame(time = c("T1", "T2", "T3", "T4"),
+                    day = c("day1","day1","day2","day2"),
+                    session = c("ses1", "ses1","ses2", "ses3"))
+
+syn <- iced_syntax(struc)
+
